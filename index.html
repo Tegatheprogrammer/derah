@@ -7,33 +7,38 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: 'Poppins', sans-serif;
       background: linear-gradient(135deg, #ffe6f2, #d8c7ff);
       color: #333;
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
-      text-align: center;
-      height: 100vh;
-      margin: 0;
+      align-items: center;
+      min-height: 100vh;
       padding: 20px;
     }
 
     .card {
       background: #fff;
-      padding: 40px 30px;
+      padding: 35px 25px;
       border-radius: 25px;
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
       max-width: 500px;
+      width: 100%;
       animation: fadeIn 1s ease;
+      text-align: center;
     }
 
     h1 {
       color: #b84d99;
-      font-size: 2.2rem;
-      margin-bottom: 10px;
+      font-size: 2rem;
+      margin-bottom: 15px;
     }
 
     p {
@@ -46,17 +51,19 @@
     h2 {
       color: #8b3e87;
       margin-top: 25px;
+      font-size: 1.2rem;
     }
 
     button {
-      margin: 10px;
-      padding: 12px 28px;
+      margin: 10px 5px;
+      padding: 12px 25px;
       border: none;
       border-radius: 10px;
       cursor: pointer;
       font-weight: 600;
       transition: all 0.3s ease;
       font-size: 1rem;
+      width: 45%;
     }
 
     #yesBtn {
@@ -89,7 +96,7 @@
     }
 
     footer {
-      margin-top: 35px;
+      margin-top: 30px;
       font-size: 0.85rem;
       color: #777;
     }
@@ -110,12 +117,36 @@
       75% { transform: translateX(-5px); }
       100% { transform: translateX(0); }
     }
+
+    /* Responsive Styles */
+    @media (max-width: 480px) {
+      .card {
+        padding: 25px 15px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+
+      button {
+        width: 100%;
+        margin: 10px 0;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="card">
     <h1>Okay... I’m Sorry (Again 😩)</h1>
-    <p>Yeah, I know — this is like my 3rd apology. You probably hate me now 😭 and honestly, I can’t even argue with that.</p>
+    <p>Yeah, I know — this is like my 3rd apology. You probably hate me by now 😭 and honestly, I can’t even argue with that.</p>
     <p>I made this website because my conscience has been judging me non-stop. It won’t let me rest — so here I am, once again.</p>
     <p>I’m not trying to do too much or act funny, I just want to say sorry properly... and maybe start fresh as friends again.</p>
     <p>It’s not that deep, no romantic stuff — I just genuinely miss the vibe and want peace. 🫶</p>
